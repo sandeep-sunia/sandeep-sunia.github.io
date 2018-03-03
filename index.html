@@ -13,8 +13,8 @@
     <link rel="shortcut icon" href="new.jfif">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
+	<!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
     
     <!-- Theme CSS -->  
@@ -55,8 +55,12 @@
                 <ul class="list-unstyled contact-list">
                     <li class="resume"><i class="fa fa-file-pdf-o"></i><a href="resume.pdf" target="_blank">Resume</a></li>
                     <li class="email"><i class="fa fa-envelope"></i><a href="mailto: sandy.iiita@gmail.com">sandy.iiita@gmail.com</a></li>
-                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/sandeep-sunia" target="_blank">linkedin.com/in/sandeep-sunia</a></li>
-                    <li class="github"><i class="fa fa-github"></i><a href="https://github.com/sandeep-sunia" target="_blank">github.com/sandeep-sunia</a></li>
+                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/sandeepsunia" target="_blank">linkedin.com/in/sandeepsunia</a></li>
+                    <li class="github"><i class="fa fa-github"></i><a href="https://github.com/sandeepsunia" target="_blank">github.com/sandeepsunia</a></li>
+					<!--
+                    <li class="phone"><i class="fa fa-phone"></i><a href="https://github.com/sandeep-sunia" target="_blank">6315900893</a></li>
+                    <li class="website"><i class="fa fa-phone"></i><a href="https://sandeepsunia.com" target="_blank">sandeepsunia.com</a></li>                    
+-->
                 </ul>
             </div><!--//contact-container-->
             <div class="languages-container container-block">
@@ -234,7 +238,110 @@
                 <a href="http://www3.cs.stonybrook.edu/~ezk/cse506/" target="_blank" style="color:blue">CSE 506</a> - Operating Systems<br/>
             </section><!--//skills-section-->
             
-        </div><!--//main-body-->
+        
+		
+		
+		
+		
+		
+		
+		<!-- Feedback form -->
+		
+		<div class="imagebg" style=""></div>
+		<div class="row " style="margin-top: 50px">
+		<span style="font-size:15px;font-weight:bold;color:red;text-decoration:underline;text-transform:uppercase;direction:rtl;">
+		Feedback is disabled for a while due to spamming.
+		</span>
+		<div class="col-md-6 form-container">
+        <h2>Feedback </h2>
+        <p>
+            Please provide your feedback below:
+        </p>
+        <form role="form" method="post" id="reused_form">
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                <label>How do you rate the CV?</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience" disabled id="radio_experience" value="bad" >
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience" disabled id="radio_experience" value="average" >
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience" disabled id="radio_experience" value="good" >
+                    Good
+                    </label>
+                </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <label for="comments">
+                        Comments:</label>
+                    <textarea class="form-control" disabled type="textarea" name="comments" id="comments" placeholder="Your Comments" maxlength="6000" rows="7"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label for="name">
+                        Your Name:</label>
+                    <input type="text" class="form-control" id="name" disabled name="name" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="email">
+                        Email:</label>
+                    <input type="email" class="form-control" disabled id="email" name="email" required>
+                </div>
+            </div>
+
+                        <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button type="submit" disabled class="btn btn-lg btn-warning btn-block" >Post </button>
+                </div>
+            </div>
+
+        </form>
+        <div id="success_message" style="width:100%; height:100%; display:none; ">
+            <h3>Posted your feedback successfully!</h3>
+        </div>
+        <div id="error_message"
+                style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3>
+                    Sorry there was an error sending your form.
+
+        </div>
+    </div>
+</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--<form action="feedback.php" method="POST">
+		Your name:<br/><input required type="text" name="realname"><br/><br/>
+		Your email:<br/><input required type="text" name="email"><br/><br/>
+		Your comments:<br/>
+		<textarea name="comments" rows="15" cols="50" placeholder="Write your feedback here."></textarea> <br/><br/>
+		<input type="submit" value="submit">
+		</form> -->
+		</div><!--//main-body-->
     </div>
  
     <!--
@@ -248,6 +355,7 @@
  
     <!-- Javascript -->          
     <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="assets/js/feedback.js">
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>            
